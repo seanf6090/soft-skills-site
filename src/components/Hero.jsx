@@ -1,5 +1,5 @@
 import React from 'react';
-import Typed from 'react-typed';
+import { TypeAnimation } from 'react-type-animation';
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
@@ -16,15 +16,17 @@ const Hero = () => {
           <p className='md:text-5xl sm:text-4xl text-xl font-bold py-4'>
             Grow soft skills in
           </p>
-          <Typed
-            className='md:text-5xl sm:text-4xl text-xl font-bold'
-            strings={['Teamwork', 'Empathy', 'Critical Thinking']}
-            typeSpeed={120}
-            backSpeed={140}
-            loop
+          <TypeAnimation
+            sequence={['Teamwork', 1500, 'Empathy', 1500, 'Critical Thinking', 1500]}
+            wrapper='span'
+            speed={50}
+            repeat={Infinity}
+            className='md:text-5xl sm:text-4xl text-xl font-bold text-[#FACC15]'
           />
         </div>
-        <p className='md:text-2xl text-xl font-bold text-[#E0F2FE]'>Practice real-world communication and decision-making through fun, fast-paced challenges.</p>
+        <p className='md:text-2xl text-xl font-bold text-[#E0F2FE]'>
+          Practice real-world communication and decision-making through fun, fast-paced challenges.
+        </p>
         <Link to='/explore'>
           <button className='bg-white text-[#1E40AF] w-[200px] rounded-md font-medium my-6 mx-auto py-3 hover:bg-[#E0E7FF] transition'>
             Let's Explore
