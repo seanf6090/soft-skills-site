@@ -1,6 +1,6 @@
 {
   "name": "soft-skills-starter",
-  "homepage": "https://seanf6090.github.io/soft-skills-site",
+  "homepage": "https://seanf6090.github.io/soft-skills-site/",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
